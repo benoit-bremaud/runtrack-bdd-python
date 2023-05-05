@@ -40,3 +40,5 @@ for x in mycursor:
 
 mycursor.execute("SELECT * FROM `employes`\
     -> WHERE `salaire` > 3000.00;")
+
+# MAJ fichier
