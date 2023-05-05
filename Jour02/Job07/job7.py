@@ -65,3 +65,11 @@ mycursor.execute("INSERT INTO `services` (`nom`)\
     ('Qualité')\
     ")
 
+# Mettre à jour le champ `id_service` la table `employés`
+# for i in range(1, 7, 1):
+
+for i in range(1, 7, 1):
+    sql = f"UPDATE `employes` SET `id_service` = {i} WHERE `id` = {i}"
+    mycursor.execute(sql)
+
+mydb.commit()
