@@ -38,7 +38,17 @@ mycursor.execute("INSERT INTO `employes`(`nom`, `prenom`, `salaire`)\
 for x in mycursor:
     print(x)
 
+# Requête permettant de récupérer tout les employés dont le salaire > 3000€
 mycursor.execute("SELECT * FROM `employes`\
     -> WHERE `salaire` > 3000.00;")
 
 # MAJ fichier
+
+# maj
+
+# Ajout d'une table `services` contenant les champs `id` et `nom`
+mycursor.execute("CREATE TABLE `services` (\
+    `id` INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,\
+    `nom` VARCHAR(255)\
+    )")
+
