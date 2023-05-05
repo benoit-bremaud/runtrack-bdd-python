@@ -52,3 +52,16 @@ mycursor.execute("CREATE TABLE `services` (\
     `nom` VARCHAR(255)\
     )")
 
+# Inserer de nom de service dans table `services` 
+mycursor.execute("INSERT INTO `services` (`nom`)\
+    VALUES\
+    ('Comptabilité'),\
+    ('Administratif),\
+    ('Technique'),\
+    ('RH'),\
+    ('ADV'),\
+    ('Production'),\
+    ('Méthode'),\
+    ('Qualité')\
+    ")
+
