@@ -73,3 +73,14 @@ for i in range(1, 7, 1):
     mycursor.execute(sql)
 
 mydb.commit()
+
+# Récupère les employés et leur service respectif
+
+sql = "SELECT * FROM `employes` JOIN `services` ON `employes`.`id_service` = `services`.`id`"
+mycursor.execute(sql)
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+
